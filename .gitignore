@@ -12,3 +12,4 @@ env/
 __pycache__/
 *.py[cod]
 *.egg-info/
+output/test.md
