@@ -1,0 +1,47 @@
+[
+  {
+    "id": "python-functions",
+    "title": "Fonctions Python",
+    "summary": "Les fonctions regroupent des instructions réutilisables et peuvent recevoir des données puis renvoyer un résultat.",
+    "prerequisites": ["variables", "types de base", "conditions"],
+    "key_concepts": ["paramètres", "arguments", "valeur de retour", "portée des variables"],
+    "common_mistakes": ["Oublier return lorsque la fonction doit renvoyer un résultat", "Confondre un paramètre avec une valeur de retour"],
+    "practice_idea": "Écrire une fonction qui reçoit une liste de nombres et renvoie leur moyenne."
+  },
+  {
+    "id": "python-loops",
+    "title": "Boucles Python",
+    "summary": "Les boucles répètent un bloc d'instructions pour parcourir des éléments ou jusqu'à ce qu'une condition change.",
+    "prerequisites": ["variables", "conditions", "listes"],
+    "key_concepts": ["boucle for", "boucle while", "itération", "break et continue"],
+    "common_mistakes": ["Créer une boucle while qui ne peut jamais se terminer", "Se tromper dans les bornes avec range"],
+    "practice_idea": "Parcourir une liste de nombres et compter combien sont pairs."
+  },
+  {
+    "id": "python-classes",
+    "title": "Classes et objets Python",
+    "summary": "Les classes définissent la structure et les comportements que leurs objets peuvent partager.",
+    "prerequisites": ["variables", "fonctions", "types de base"],
+    "key_concepts": ["classe", "instance", "attribut", "méthode", "self", "__init__"],
+    "common_mistakes": ["Oublier self dans la définition d'une méthode d'instance", "Confondre un attribut de classe avec un attribut d'instance"],
+    "practice_idea": "Créer une classe Livre avec un titre, un auteur et une méthode qui présente le livre."
+  },
+  {
+    "id": "python-decorators",
+    "title": "Décorateurs Python",
+    "summary": "Un décorateur reçoit une fonction et renvoie une fonction qui ajoute ou modifie son comportement.",
+    "prerequisites": ["fonctions", "fonctions imbriquées", "fonctions d'ordre supérieur"],
+    "key_concepts": ["fonction de première classe", "fermeture", "fonction enveloppe", "syntaxe @"],
+    "common_mistakes": ["Oublier de renvoyer la fonction enveloppe", "Appeler la fonction au lieu de la renvoyer"],
+    "practice_idea": "Créer un décorateur qui affiche le nom d'une fonction avant de l'appeler."
+  },
+  {
+    "id": "python-exceptions",
+    "title": "Gestion des exceptions Python",
+    "summary": "Les exceptions permettent de détecter et de traiter les erreurs qui surviennent pendant l'exécution d'un programme.",
+    "prerequisites": ["conditions", "fonctions", "types de base"],
+    "key_concepts": ["try", "except", "else", "finally", "raise"],
+    "common_mistakes": ["Intercepter toutes les exceptions sans examiner leur type", "Masquer une erreur sans expliquer comment la corriger"],
+    "practice_idea": "Demander un nombre à l'utilisateur et gérer proprement le cas où sa saisie n'est pas un entier."
+  }
+]

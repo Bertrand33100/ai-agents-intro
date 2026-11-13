@@ -16,6 +16,22 @@ Un programme Python orchestre les agents, assemble leurs réponses, vérifie la 
 
 Le modèle d'intelligence artificielle fonctionne localement avec Ollama.
 
+## MCP Architecture Summary
+
+Le **Model Context Protocol (MCP)** est un protocole ouvert qui donne aux applications d'intelligence artificielle une manière commune de découvrir et d'utiliser des services externes.
+
+- L'**hôte MCP** est l'application avec laquelle l'utilisateur interagit. Il orchestre l'échange avec le modèle et les connexions MCP.
+- Le **client MCP** est le composant de l'hôte qui communique avec un serveur précis. L'hôte crée un client par serveur auquel il se connecte.
+- Le **serveur MCP** est le programme qui présente ses capacités au client, par exemple les fonctions disponibles et les données consultables.
+- Les **outils** sont des fonctions que l'application peut faire appeler, par exemple rechercher un sujet dans le catalogue.
+- Les **ressources** sont des données consultables en lecture, par exemple le catalogue de sujets fourni comme contexte.
+
+Par exemple, si un étudiant demande comment commencer à apprendre les décorateurs Python, l'hôte transmet la demande au modèle. Celui-ci peut utiliser un client MCP connecté au serveur pédagogique pour rechercher les prérequis, puis formuler une réponse à partir des informations renvoyées.
+
+Un serveur doit exposer uniquement les fonctions et les données nécessaires à son objectif. Cela limite les accès accordés, réduit les risques d'exposition accidentelle et rend ses capacités plus faciles à comprendre et à vérifier.
+
+Pour aller plus loin : [Introduction officielle à MCP](https://modelcontextprotocol.io/introduction) et [vue d'ensemble de l'architecture](https://modelcontextprotocol.io/docs/learn/architecture).
+
 ## Prérequis
 
 Pour installer et exécuter le projet, il faut disposer de :

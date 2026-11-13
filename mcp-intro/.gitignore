@@ -1,0 +1,19 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+
+# Environnements Python
+.venv/
+venv/
+env/
+
+# Fichiers temporaires Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Fichiers temporaires d'éditeur et système
+.DS_Store
+.vscode/
+.idea/
